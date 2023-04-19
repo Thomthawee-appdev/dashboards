@@ -1,3 +1,14 @@
 <h1>Currency pairs</h1>
 
-<a gref="">go back 11:28 </a>
+<p>Go <a href="/forex">back</a>.</p>
+
+
+<ul>
+  <% @array_of_symbols.each do |a_symbol|%>
+    <li>
+      <a href="/forex/<%= a_symbol %>">
+        convert 1 <%= a_symbol %> to...
+      </a>
+    </li>
+  <% end %>
+</ul>
